@@ -14,7 +14,7 @@ int main(void) {
     cout << kitchen.explore() << "\r\n";
     cout << cellar.explore() << endl;
 
-    Connection from_kitchen_to_cellar(&kitchen, &cellar);
+    Connection from_kitchen_to_cellar(&kitchen, "A door in a dark corner of the room", &cellar, "A door in the corner where light shatters of the sides");
 
     kitchen.addConnection(&from_kitchen_to_cellar);
     cellar.addConnection(&from_kitchen_to_cellar);
