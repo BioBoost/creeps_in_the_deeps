@@ -17,6 +17,7 @@ class Connection {
 
   public:
     Connection(Room * left, std::string left_description, Room * right, std::string right_description);
+    std::string description(Room * from);
 
 };
 
