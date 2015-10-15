@@ -19,6 +19,7 @@ class Room {
     std::string explore(void);
     void addConnection(Connection * connection);
 
+    Room * go(std::string instruction);
 };
 
 #endif
